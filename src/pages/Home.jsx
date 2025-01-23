@@ -17,6 +17,9 @@ export default function Home() {
       <button>Se connecter</button>
       </Link>
       )}
+      <Link to="/contact">
+        <button>Nous contacter</button>
+      </Link>
       <h1 className="animation">Bienvenue dans l'univers de Zelda</h1>
       <Link to="/games">
         <button>Voir les jeux</button>
