@@ -1,0 +1,64 @@
+.not-found {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background: #1b4332; /* Vert forêt, rappelant les forêts de Zelda */
+    color: #fff;
+  
+    /* Police principale */
+    font-family: 'Press Start 2P', cursive;
+  
+    h1 {
+      font-size: 6rem;
+      color: #ffd700; /* Doré pour donner un aspect légendaire */
+      text-shadow: 0 0 10px #ffd700, 0 0 20px #ff4500;
+    }
+  
+    p {
+      font-size: 1.2rem;
+      margin: 1rem 0;
+      color: #eaeaea;
+      text-shadow: 0 0 10px #00ff00, 0 0 20px #00aa00;
+    }
+  
+    .not-found__image {
+      max-width: 300px;
+      margin-bottom: 20px;
+      animation: float 3s infinite;
+    }
+  
+    .back-home {
+      margin-top: 20px;
+      padding: 15px 30px;
+      background-color: #007f5f; /* Vert émeraude */
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      text-transform: uppercase;
+      box-shadow: 0 0 10px #007f5f, 0 0 20px #ffd700;
+      transition: all 0.3s ease-in-out;
+  
+      &:hover {
+        background-color: #ff4500; /* Rouge pour rappeler les cœurs perdus */
+        box-shadow: 0 0 10px #ff4500, 0 0 20px #ff0000;
+        transform: scale(1.1);
+      }
+    }
+  
+    @keyframes float {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+  }
+  
