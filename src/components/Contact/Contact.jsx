@@ -51,6 +51,8 @@ export default function Contact() {
           <label htmlFor="message">Message :</label>
           <textarea
             id="message"
+
+            
             name="message"
             value={formData.message}
             onChange={handleChange}

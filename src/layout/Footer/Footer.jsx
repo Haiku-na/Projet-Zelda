@@ -5,7 +5,7 @@ export default function Footer() {
     return (
       <div className="footer">
         <img src="triforce.png" alt="Un footer tout ce qu'il y a de plus normal" />
-        <p>&copy; Zelda Universal Studio &copy;</p>
+        <p>&copy; Zelda Universal Mondo Studio &copy;</p>
       </div>
     );
   }
