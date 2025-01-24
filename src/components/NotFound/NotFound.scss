@@ -5,15 +5,15 @@
     align-items: center;
     height: 100vh;
     text-align: center;
-    background: #1b4332; /* Vert forêt, rappelant les forêts de Zelda */
+    background: #1b4332;
     color: #fff;
   
-    /* Police principale */
+   
     font-family: 'Press Start 2P', cursive;
   
     h1 {
       font-size: 6rem;
-      color: #ffd700; /* Doré pour donner un aspect légendaire */
+      color: #ffd700; 
       text-shadow: 0 0 10px #ffd700, 0 0 20px #ff4500;
     }
   
@@ -33,7 +33,7 @@
     .back-home {
       margin-top: 20px;
       padding: 15px 30px;
-      background-color: #007f5f; /* Vert émeraude */
+      background-color: #007f5f; 
       color: #fff;
       text-decoration: none;
       border-radius: 5px;
@@ -43,7 +43,7 @@
       transition: all 0.3s ease-in-out;
   
       &:hover {
-        background-color: #ff4500; /* Rouge pour rappeler les cœurs perdus */
+        background-color: #ff4500; 
         box-shadow: 0 0 10px #ff4500, 0 0 20px #ff0000;
         transform: scale(1.1);
       }

@@ -3,49 +3,49 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #0b3d0b; // Vert sombre pour rester dans le thème
-  color: #ffd700; // Doré pour rappeler la Triforce
+  background-color: #0b3d0b; 
+  color: #ffd700;
   padding: 20px;
-  border-top: 3px solid #ffd700; // Ligne dorée pour séparer le footer
+  border-top: 3px solid #ffd700; 
 
   img {
-    width: 80px; // Taille adaptée pour l'image
+    width: 80px;
     height: auto;
     margin-bottom: 10px;
-    animation: float 3s ease-in-out infinite; // Animation pour donner du mouvement
+    animation: float 3s ease-in-out infinite;
   }
 
   p {
-    font-family: "Triforce", sans-serif; // Police personnalisée
+    font-family: "Triforce", sans-serif; 
     font-size: 16px;
     text-align: center;
-    text-shadow: 1px 1px 3px #000; // Effet de lumière
+    text-shadow: 1px 1px 3px #000; 
     letter-spacing: 1px;
 
-    // Style humoristique ou décontracté
+ 
     &:hover {
-      color: #ff4500; // Changement de couleur au survol
-      transform: scale(1.1); // Zoom léger
+      color: #ff4500; 
+      transform: scale(1.1);
       transition: all 0.3s ease;
     }
   }
 
-  // Animation pour l'image
+
   @keyframes float {
     0%, 100% {
       transform: translateY(0);
     }
     50% {
-      transform: translateY(-10px); // L'image flotte légèrement
+      transform: translateY(-10px);
     }
   }
 
-  // Style réactif pour les petits écrans
+
   @media (max-width: 768px) {
     padding: 15px;
 
     img {
-      width: 60px; // Réduction de la taille de l'image
+      width: 60px; 
     }
 
     p {

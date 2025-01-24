@@ -18,7 +18,7 @@ export default function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Form submitted:", formData);
-    // Vous pouvez ajouter ici une logique pour envoyer les données à un serveur
+
   };
 
   return (
