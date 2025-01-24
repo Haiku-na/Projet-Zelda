@@ -15,7 +15,7 @@ export default function ApiFetch({ url, children }) {
         return response.json();
       })
       .then((result) => {
-        setData(result.data || []);
+        setData(result.data || []); 
         setIsLoading(false);
       })
       .catch((err) => {
@@ -27,10 +27,13 @@ export default function ApiFetch({ url, children }) {
 
   if (isLoading) {
     return (
-      <div className="container">
-        <div className="container__content">
-          <span className="loader"></span>
-        </div>
+      <div className="frame">
+        <div className="dot dot1"></div><br />
+        <div className="dot dot2"></div>
+        <div className="dot dot3"></div><br />
+        <div className="dot dot4"></div>
+        <div className="dot dot5"></div><br />
+        <div className="dot dot6"></div>
       </div>
     );
   }
