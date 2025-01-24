@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useAuth } from "../../auth/AuthProvider";
-import "./Comments.scss"
+import "./Comments.scss"; 
 
 export default function Comment() {
   const { user } = useAuth();
