@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useAuth } from "../../auth/AuthProvider";
 import { Login, Logout } from "../../auth/LoginOut";
 
-import "../../pages/home.scss";
+import "../../pages/Home.scss";
 
 export default function Connect() {
   const { user } = useAuth();
