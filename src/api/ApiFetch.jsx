@@ -3,7 +3,7 @@ import "./loader.scss";
 
 export default function ApiFetch({ url, children }) {
   const [data, setData] = useState([]);
-  const [isLoading, setIsLoading] = useState(true); // Define isLoading state
+  const [isLoading, setIsLoading] = useState(true); 
   const [error, setError] = useState(null);
 
   useEffect(() => {

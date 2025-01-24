@@ -1,20 +1,20 @@
 import { createContext, useState, useContext, useEffect } from "react";
 import Cookies from "js-cookie";
 
-// Créer le contexte d'authentification
+
 export const AuthContext = createContext(undefined);
 
 export function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
-  const [loading, setLoading] = useState(true); // État pour gérer le chargement
+  const [loading, setLoading] = useState(true); 
 
   useEffect(() => {
-    // Vérifie si un utilisateur est stocké dans les cookies
+
     const storedUser = Cookies.get("user");
     if (storedUser) {
       setUser(JSON.parse(storedUser));
     }
-    setLoading(false); // Le chargement est terminé une fois les données vérifiées
+    setLoading(false); 
   }, []);
 
   const login = (username, password) => {
@@ -32,9 +32,9 @@ export function AuthProvider({ children }) {
     Cookies.remove("user");
   };
 
-  // Si les données sont en train de se charger, retournez un indicateur de chargement
+
   if (loading) {
-    return <div>Chargement...</div>; // Vous pouvez remplacer cela par un composant de chargement personnalisé
+    return <div>Chargement...</div>; 
   }
 
   return (
@@ -44,7 +44,6 @@ export function AuthProvider({ children }) {
   );
 }
 
-// Hook personnalisé pour accéder au contexte
 export function useAuth() {
   const context = useContext(AuthContext);
   if (!context) {
