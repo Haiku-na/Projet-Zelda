@@ -20,9 +20,7 @@ export default function Router() {
       <Route path="/bosses" element={<FetchBosses/>}/>
       <Route path="/connect" element={<Connect />} />
       <Route path="*" element={<NotFound />} />
-      <PrivateRoute>
-        <Route path="/contact" element={<Contact />} />
-      </PrivateRoute>
+      <Route path="/contact" element={<PrivateRoute><Contact /></PrivateRoute>} />
     </Routes>
   );
 }
