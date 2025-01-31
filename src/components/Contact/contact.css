@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
+.contact-container {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #1a1a1a;
+  border: 2px solid #d4af37;
+  border-radius: 10px;
+  color: #fff;
+  font-family: 'MedievalSharp', cursive;
+  text-align: center;
+
+  h2 {
+    color: #d4af37;
+    text-shadow: 2px 2px 4px rgba(212, 175, 55, 0.7);
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+    }
+
+    label {
+      font-weight: bold;
+      color: #d4af37;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #d4af37;
+      background: #222;
+      color: #fff;
+      font-family: 'MedievalSharp', cursive;
+    }
+
+    textarea {
+      min-height: 100px;
+      resize: none;
+    }
+
+    button {
+      background: #d4af37;
+      color: #1a1a1a;
+      font-weight: bold;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+
+      &:hover {
+        background: #b58e2e;
+      }
+    }
+  }
+}

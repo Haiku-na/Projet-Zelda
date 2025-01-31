@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import "./contact.css";
+
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -22,7 +24,7 @@ export default function Contact() {
   };
 
   return (
-    <div>
+    <div className="conctact-container">
       <h2>Contactez-nous</h2>
       <form onSubmit={handleSubmit}>
         <div>
