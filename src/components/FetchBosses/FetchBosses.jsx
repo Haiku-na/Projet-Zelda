@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ApiFetch from "../../api/ApiFetch";
-import "../../pages/Home.scss";
+
 import Comments from "../Comments/Comments";
 export default function FetchBosses() {
   const [expandedBoss, setExpandedBoss] = useState(null);

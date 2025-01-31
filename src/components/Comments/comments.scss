@@ -1,107 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
 .comments-section {
-    background: #1b4332;
-    color: #fff;
-    border: 3px solid #007f5f;
-    border-radius: 10px;
-    padding: 20px;
-    max-width: 800px;
-    margin: 20px auto;
-    box-shadow: 0 0 20px #007f5f, 0 0 40px #ffd700;
-  
-    h3 {
-      font-family: 'Press Start 2P', cursive;
-      font-size: 2rem;
-      color: #ffd700; 
-      text-shadow: 0 0 10px #ffd700, 0 0 20px #ff4500;
-      text-align: center;
-      margin-bottom: 20px;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #1a1a1a;
+  border: 2px solid #d4af37;
+  border-radius: 10px;
+  color: #fff;
+  font-family: 'MedievalSharp', cursive;
+
+  h3 {
+    text-align: center;
+    color: #d4af37;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+    textarea {
+      width: 100%;
+      min-height: 80px;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #d4af37;
+      background: #222;
+      color: #fff;
+      font-family: 'MedievalSharp', cursive;
+      resize: none;
     }
-  
-    form {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 20px;
-  
-      textarea {
-        width: 100%;
-        max-width: 600px;
-        height: 100px;
-        background: #2a5934; 
-        color: #fff;
-        font-family: 'Press Start 2P', cursive;
-        border: 2px solid #007f5f;
-        border-radius: 5px;
-        padding: 10px;
-        resize: none;
-        box-shadow: 0 0 10px #00ff00;
-  
-        &::placeholder {
-          color: #b6d7a8; 
-        }
-      }
-  
-      button {
-        margin-top: 10px;
-        padding: 10px 20px;
-        background-color: #007f5f;
-        color: #fff;
-        font-family: 'Press Start 2P', cursive;
-        font-size: 1rem;
-        border: none;
-        border-radius: 5px;
-        box-shadow: 0 0 10px #007f5f, 0 0 20px #ffd700;
-        cursor: pointer;
-        transition: all 0.3s ease;
-  
-        &:hover {
-          background-color: #ff4500;
-          box-shadow: 0 0 10px #ff4500, 0 0 20px #ff0000;
-          transform: scale(1.1);
-        }
-      }
-    }
-  
-    p {
-      text-align: center;
-      font-family: 'Press Start 2P', cursive;
-      font-size: 1rem;
-      color: #eaeaea;
-      text-shadow: 0 0 10px #00ff00;
-    }
-  
-    .comments-list {
-      margin-top: 20px;
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-  
-      .comment {
-        background: #2a5934;
-        border: 2px solid #007f5f;
-        border-radius: 5px;
-        padding: 10px;
-        color: #fff;
-        box-shadow: 0 0 10px #00ff00, 0 0 20px #00aa00;
-  
-        strong {
-          font-size: 1.2rem;
-          color: #ffd700;
-          text-shadow: 0 0 10px #ffd700;
-        }
-  
-        small {
-          display: block;
-          font-size: 0.8rem;
-          color: #b6d7a8;
-          margin-bottom: 5px;
-        }
-  
-        p {
-          font-size: 1rem;
-          color: #eaeaea;
-        }
+
+    button {
+      background: #d4af37;
+      color: #1a1a1a;
+      font-weight: bold;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        background: #b58e2e;
       }
     }
   }
-  
+
+  .comments-list {
+    margin-top: 20px;
+    
+    .comment {
+      padding: 10px;
+      border-bottom: 1px solid #d4af37;
+
+      strong {
+        color: #d4af37;
+      }
+
+      small {
+        display: block;
+        font-size: 12px;
+        color: #aaa;
+        margin-bottom: 5px;
+      }
+
+      p {
+        margin: 5px 0;
+      }
+    }
+  }
+
+  p {
+    text-align: center;
+    font-size: 14px;
+    color: #aaa;
+  }
+}

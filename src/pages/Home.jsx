@@ -1,8 +1,7 @@
 import { Link } from "react-router";
-import "./Home.scss"
 import { useAuth } from "../auth/AuthProvider";
 import { Login, Logout } from "../auth/LoginOut";
-
+import "../index.css";
 export default function Home() {
   const { user } = useAuth();
   return (
@@ -33,6 +32,19 @@ export default function Home() {
       <Link to="/bosses">
         <button>Voir les Boss</button>
       </Link>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
     </div>
   );
 }
