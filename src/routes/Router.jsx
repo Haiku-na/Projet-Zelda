@@ -8,7 +8,7 @@ import FetchBosses from "../components/FetchBosses/FetchBosses";
 import Connect from "../components/Connect/Connect";
 import NotFound from "../components/NotFound/NotFound";
 import Contact from "../components/Contact/Contact";
-
+import { PrivateRoute } from "../auth/PrivateRoute";
 
 export default function Router() {
   return (
@@ -20,7 +20,9 @@ export default function Router() {
       <Route path="/bosses" element={<FetchBosses/>}/>
       <Route path="/connect" element={<Connect />} />
       <Route path="*" element={<NotFound />} />
-      <Route path="/contact" element={<Contact />} />
+      <PrivateRoute>
+        <Route path="/contact" element={<Contact />} />
+      </PrivateRoute>
     </Routes>
   );
 }
