@@ -24,7 +24,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="conctact-container">
+    <div className="contact-container">
       <h2>Contactez-nous</h2>
       <form onSubmit={handleSubmit}>
         <div>
